@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>EuroVanguard Travels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-white" href="#">
+            <span class="text-warning">✈</span> EuroVanguard Travels
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active text-warning" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#destinos">Destinos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="inicio" class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+        <h1 class="display-3 fw-bold">
+            Explora el Viejo Continente y conviértelo en experiencias.
+        </h1>
+        <p class="lead">
+            Sumérgete en la cultura, historia y belleza de Europa con itinerarios diseñados a la perfección.
+        </p>
+        <a href="#destinos" class="btn btn-warning btn-lg px-4 mt-3">
+            DESCUBRIR DESTINOS
+        </a>
+    </div>
+</section>
+
+<!-- DESTINOS -->
+<section id="destinos" class="destinos-section">
+    <div class="container">
+        <h2 class="titulo-seccion">Nuestros Destinos Principales</h2>
+        <div id="destinos-container" class="destinos-container"></div>
+    </div>
+</section>
+
+<script src="js/destinos.js"></script>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios" class="py-5 bg-dark text-white text-center">
+    <div class="container">
+        <h2 class="fw-bold mb-5">Lo que dicen nuestros viajeros</h2>
+
+        <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="assets/foto1.jpg" class="rounded-circle mb-3" width="120">
+                    <p class="lead">
+                        "Recorrer la ruta de Gaudí fue una experiencia increíble."
+                    </p>
+                    <h5 class="text-warning">Roberto Salazar</h5>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/foto2.jpg" class="rounded-circle mb-3" width="120">
+                    <p class="lead">
+                        "Organización perfecta y hoteles de primer nivel."
+                    </p>
+                    <h5 class="text-warning">Laura Méndez</h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto-section">
+    <div class="container">
+        <h2 class="titulo-seccion">Ponte en Contacto</h2>
+
+        <div class="contacto-grid">
+
+            <div class="contacto-card">
+                <div class="icono">📞</div>
+                <h3>Teléfono</h3>
+                <p>+52 (55) 1234-5678</p>
+                <p>+52 (55) 8765-4321</p>
+            </div>
+
+            <div class="contacto-card">
+                <div class="icono">✉️</div>
+                <h3>Correo Electrónico</h3>
+                <p>info@eurovanguardtravels.com</p>
+                <p>reservas@eurovanguardtravels.com</p>
+            </div>
+
+            <div class="contacto-card">
+                <div class="icono">🕒</div>
+                <h3>Horario de Atención</h3>
+                <p>Lunes a Viernes: 9:00 AM - 7:00 PM</p>
+                <p>Sábados: 10:00 AM - 2:00 PM</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- UBICACIÓN -->
+<section id="ubicacion">
+    <iframe 
+        src="https://www.google.com/maps?q=Angel+de+la+Independencia+CDMX&output=embed"
+        width="100%" height="400" style="border:0;" allowfullscreen>
+    </iframe>
+</section>
+
+<!-- FOOTER DINÁMICO -->
+<div id="footer"></div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script para cargar componentes -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
